@@ -80,7 +80,7 @@
   </body>
 
   <script>
-    let msg = $state('Passe o mouse sobre o botão e essa mensagem nunca mais será a mesma!'),
+    let msg = $state('Passe o mouse sobre o botão e clique'),
         clicado = $state(false);
 
     function entrando() {
@@ -88,8 +88,8 @@
     }
 
     function saindo() {
-        if (clicado) msg = 'Você clicou no botão!';
-        else msg = 'Ok, da próxima vez faça o que eu te disser...';
+        if (clicado) msg = 'Você clicou no botão e nao saiu da pagina!';
+        else msg = 'CARAMBA ESCOLHE LOGO';
         clicado = false;
     }
 
@@ -98,8 +98,8 @@
 
         // Gera o confete com canvas-confetti
         confetti({
-            particleCount: 100, // Quantidade de partículas
-            spread: 70, // Abertura do confete
+            particleCount: 1000, // Quantidade de partículas
+            spread: 500, // Abertura do confete
             origin: { y: 0.6 } // Origem do confete (altura relativa)
         });
     }
