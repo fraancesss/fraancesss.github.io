@@ -65,18 +65,52 @@
             color:#fac800;
             font-size:30px;
             font-weight: bold;
-           
-           
-           
-  
-  
+        
           }
-  
-  
-  
-  
-  
   
     </style>
   </body>
+
+  <script>
+    let msg = $state('Passe o mouse sobre o botão e essa mensagem nunca mais será a mesma!'),
+        clicado = $state(false);
+
+    function entrando() {
+        msg = 'Agora clique no botão!';
+    }
+
+    function saindo() {
+        if (clicado) msg = 'Você clicou no botão!';
+        else msg = 'Ok, da próxima vez faça o que eu te disser...';
+        clicado = false;
+    }
+
+    function clicando() {
+        clicado = true;
+
+        // Gera o confete com canvas-confetti
+        confetti({
+            particleCount: 100, // Quantidade de partículas
+            spread: 70, // Abertura do confete
+            origin: { y: 0.6 } // Origem do confete (altura relativa)
+        });
+    }
+</script>
+
+<svelte:head>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</svelte:head>
+
+<div class="text-center">
+    <h1>Eventos de mouse</h1>
+    <p>{msg}</p>
+    <button class="btn btn-outline-primary" onclick={clicando}
+            onmouseover={entrando} onmouseout={saindo}
+            onfocus={entrando}     onblur={saindo}>BOTÃO</button>
+</div>
+
+<style>
+    button { transition: transform 0.3s ease; }
+    button:hover { transform: scale(1.3); }
+</style>
   
