@@ -26,7 +26,7 @@
 <body>
     <style>
         body {
-            background-image: url('https://images6.alphacoders.com/136/1361763.jpeg');
+            background-image: url('https://wallpapercave.com/wp/wp10971695.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
