@@ -1,29 +1,3 @@
-<div class="caixa2">
-    <a href="/#"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" /><button class="btn btn-outline-primary" onclick={clicando}
-        onmouseover={entrando} onmouseout={saindo}
-        onfocus={entrando}     onblur={saindo}>Pagina 1</button><br>
-     </a>
-
-
-      <a href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" /><button class="btn btn-outline-primary"
-        onmouseover={entrando} onmouseout={saindo}
-        onfocus={entrando}     onblur={saindo}>Pagina 2</button><br>
-    </a>
-     
-        <a href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" />
-            <button class="btn btn-outline-primary"
-            onmouseover={entrando} onmouseout={saindo}
-            onfocus={entrando}     onblur={saindo}>Pagina 3</button><br>
-         
-          </a>
-
-
-          <a href="/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" /><button  class="btn btn-outline-primary" onclick={clicando}
-            onmouseover={entrando} onmouseout={saindo}
-            onfocus={entrando}     onblur={saindo}>
-            Pagina 4
-          </button><br></a>
-        </div>
 
 
 <body>
@@ -57,47 +31,6 @@
     </style>
 </body>
 
-<script>
-    let msg = $state('Passe o mouse sobre o botão e clique'),
-        clicado = $state(false);
-
-    function entrando() {
-        msg = 'Agora clique no botão!';
-    }
-
-    function saindo() {
-        if (clicado) msg = 'Você clicou no botão e nao saiu da pagina!';
-        else msg = 'CARAMBA ESCOLHE LOGO';
-        clicado = false;
-    }
-
-    function clicando() {
-        clicado = true;
-
-        // Gera o confete com canvas-confetti
-        confetti({
-            particleCount: 1000, // Quantidade de partículas
-            spread: 500, // Abertura do confete
-            origin: { y: 0.6 } // Origem do confete (altura relativa)
-        });
-    }
-</script>
-
-<svelte:head>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-</svelte:head>
-
-<div class="letra">
-    
-    <p>{msg}</p>
-    
-</div>
-
-
-<style>
-    button { transition: transform 0.3s ease; }
-    button:hover { transform: scale(1.3); }
-</style>
   
 <center>
     <div class="caixa1">

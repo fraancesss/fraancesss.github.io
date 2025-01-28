@@ -1,20 +1,37 @@
-<head>
+
+<body>
    
     <style>
      
      body
      .faca {
+        
     background-color: rgba(9, 1, 1, 0.5); 
     padding: 10px;
     border-radius: 10px;
     min-height: 5vh;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #12520c ;
-  }
+    width: 145px; 
+    
+}
+.caixa {
+            background-color: rgba(9, 1, 1, 0.5);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #ff1100 ;
+            width: 200px;
+            font-size: 30px;
+           
+           
+        }
   
   
   </style>
-  </head>
+  </body>
   <script>
     let { children } = $props();
   </script>
@@ -22,44 +39,84 @@
   
   <nav class="navbar navbar-expand-sm bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/#">
-        <img src="/medo.jpg" alt="Logo" width="70" height="70" />
-       
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-   
-     
-     
+         
+      
+    
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-  
+            <left>
   
           <div class="faca">
-            <a class="nav-link" href="/#"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" /></a>
-            <a class="nav-link" href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" /></a>
-            <a class="nav-link" href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" /></a>
-            <a class="nav-link" href="/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" /></a>
+            <a class="nav-link" href="/#"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" />
+                <button class="btn btn-outline-primary" 
+                onmouseover={entrando} onmouseout={saindo}
+                onfocus={entrando}     onblur={saindo}>Pagina 1</button></a><br>
+
+            <a class="nav-link" href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" />
+                <button class="btn btn-outline-primary" 
+                onmouseover={entrando} onmouseout={saindo}
+                onfocus={entrando}     onblur={saindo}>Pagina 2</button></a><br>
+
+            <a class="nav-link" href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" />
+                <button class="btn btn-outline-primary" 
+                onmouseover={entrando} onmouseout={saindo}
+                onfocus={entrando}     onblur={saindo}>Pagina 3</button></a><br>
+
+            <a class="nav-link" href="/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" />
+                <button class="btn btn-outline-primary" 
+                onmouseover={entrando} onmouseout={saindo}
+                onfocus={entrando}     onblur={saindo}>Pagina 4</button></a><br>
         </div>
         
-          
+    </left>
          
         </ul>
       </div>
     </div>
   </nav>
-  
+  <script module>
+  let msg = $state('Passe o mouse sobre o botão e clique'),
+  clicado = $state(false);
+
+function entrando() {
+  msg = 'Agora clique no botão!';
+}
+
+function saindo() {
+  if (clicado) msg = 'Você clicou no botão e nao saiu da pagina!';
+  else msg = 'CARAMBA ESCOLHE LOGO';
+  clicado = false;
+}
+
+function clicando() {
+  clicado = true;
+
+  // Gera o confete com canvas-confetti
+  confetti({
+      particleCount: 1000, // Quantidade de partículas
+      spread: 500, // Abertura do confete
+      origin: { y: 0.6 } // Origem do confete (altura relativa)
+  });
+}
+</script >
+
+<svelte:head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</svelte:head>
+
+<div class="caixa">
+
+<p>{msg}</p>
+
+</div>
+
+<style>
+button { transition: transform 0.3s ease; }
+button:hover { transform: scale(1.3); }
+</style>
   
   {@render children()}
+  
   
   
   
