@@ -27,12 +27,7 @@
               </a></div>
 
               
-              <center>
-                <div class="caixa1">
-                 
-                <h1>OLAAA , Beleza filhote😶‍🌫️</h1>
-              </div>
-              </center>
+              
 
   
   <body>
@@ -110,16 +105,20 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </svelte:head>
 
-<div class="text-center">
-    <h1>Eventos de mouse</h1>
+<div class="letra">
+    
     <p>{msg}</p>
-    <button class="btn btn-outline-primary" onclick={clicando}
-            onmouseover={entrando} onmouseout={saindo}
-            onfocus={entrando}     onblur={saindo}>BOTÃO</button>
+    
 </div>
 
 <style>
     button { transition: transform 0.3s ease; }
     button:hover { transform: scale(1.3); }
 </style>
-  
+
+  <center>
+                <div class="caixa1">
+                 
+                <h1>OLAAA , Beleza filhote😶‍🌫️</h1>
+              </div>
+              </center>
