@@ -10,19 +10,27 @@
   <div class="caixa2">
 
 
-    <a href="/#"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" /><button onclick={() => location.reload()}>
+    <a href="/#"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" /><button  class="btn btn-outline-primary" onclick={clicando}
+        onmouseover={entrando} onmouseout={saindo}
+        onfocus={entrando}     onblur={saindo}>
         Pagina 1
       </button><br>
       </a>
 
-      <a href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" /><button>Pagina 2</button><br>
+      <a href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" /><button class="btn btn-outline-primary" 
+        onmouseover={entrando} onmouseout={saindo}
+        onfocus={entrando}     onblur={saindo}>Pagina 2</button><br>
         </a>
        
-          <a href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" /><button>Pagina 3</button><br>
+          <a href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" /><button class="btn btn-outline-primary" 
+            onmouseover={entrando} onmouseout={saindo}
+            onfocus={entrando}     onblur={saindo}>Pagina 3</button><br>
             </a>
       
       
-            <a href="/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" /><button>Pagina 4</button><br>
+            <a href="/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" /><button class="btn btn-outline-primary" 
+                onmouseover={entrando} onmouseout={saindo}
+                onfocus={entrando}     onblur={saindo}>Pagina 4</button><br>
               </a></div>
   
   
