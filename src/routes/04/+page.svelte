@@ -99,3 +99,9 @@
     button:hover { transform: scale(1.3); }
 </style>
   
+<center>
+    <div class="caixa1">
+     
+    <h1>エネルギー</h1>
+  </div>
+  </center>
