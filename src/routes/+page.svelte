@@ -9,24 +9,6 @@
   
 
 
-  <div class="caixa2">
-
-
-    <a href="/#"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" /><br>
-      </a>
-
-
-<a href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" /><br>
-  </a>
- 
-    <a href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" /><br>
-      </a>
-
-
-      <a href="/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" /><br>
-        </a></div>
-
-
        
 
   
