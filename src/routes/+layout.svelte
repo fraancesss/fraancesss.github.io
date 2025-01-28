@@ -39,6 +39,11 @@
   
   <nav class="navbar navbar-expand-sm bg-body-tertiary">
     <div class="container-fluid">
+        <a class="navbar-brand" href="/#">
+            <img src="/medo.jpg" class="rounded-2" alt="5"  />
+           
+          </a>
+      
          
       
     
@@ -47,22 +52,22 @@
             <left>
   
           <div class="faca">
-            <a class="nav-link" href="/#"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" />
+            <a class="nav-link" href="/ORDEM/01"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" 
                 onmouseover={entrando} onmouseout={saindo}
                 onfocus={entrando}     onblur={saindo}>Pagina 1</button></a><br>
 
-            <a class="nav-link" href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" />
+            <a class="nav-link" href="/ORDEM/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" 
                 onmouseover={entrando} onmouseout={saindo}
                 onfocus={entrando}     onblur={saindo}>Pagina 2</button></a><br>
 
-            <a class="nav-link" href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" />
+            <a class="nav-link" href="/ORDEM/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" 
                 onmouseover={entrando} onmouseout={saindo}
                 onfocus={entrando}     onblur={saindo}>Pagina 3</button></a><br>
 
-            <a class="nav-link" href="/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" />
+            <a class="nav-link" href="/ORDEM/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" 
                 onmouseover={entrando} onmouseout={saindo}
                 onfocus={entrando}     onblur={saindo}>Pagina 4</button></a><br>
@@ -104,11 +109,6 @@ function clicando() {
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </svelte:head>
 
-<div class="caixa">
-
-<p>{msg}</p>
-
-</div>
 
 <style>
 button { transition: transform 0.3s ease; }
