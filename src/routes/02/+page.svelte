@@ -6,7 +6,9 @@
      </div></a>
 
 
-      <a href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" /><button onclick={() => location.reload()}>
+      <a href="/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" /><button  class="btn btn-outline-primary" onclick={clicando}
+        onmouseover={entrando} onmouseout={saindo}
+        onfocus={entrando}     onblur={saindo}>
         Pagina 2
       </button><br>
         <div class="letra">
