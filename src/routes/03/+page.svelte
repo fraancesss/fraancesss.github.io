@@ -10,7 +10,9 @@
           </a>
 
 
-          <a href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" /><button onclick={() => location.reload()}>
+          <a href="/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" /><button  class="btn btn-outline-primary" onclick={clicando}
+            onmouseover={entrando} onmouseout={saindo}
+            onfocus={entrando}     onblur={saindo}>
             Pagina 3
         </button><br>
             </a>

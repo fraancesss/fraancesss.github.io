@@ -1,11 +1,4 @@
 
-
-<center>
-    <div class="caixa1">
-     
-    <h1>OLAAA , Beleza filhote😶‍🌫️</h1>
-  </div>
-  </center>
   
   <div class="caixa2">
 
@@ -32,7 +25,15 @@
                 onmouseover={entrando} onmouseout={saindo}
                 onfocus={entrando}     onblur={saindo}>Pagina 4</button><br>
               </a></div>
-  
+
+              
+              <center>
+                <div class="caixa1">
+                 
+                <h1>OLAAA , Beleza filhote😶‍🌫️</h1>
+              </div>
+              </center>
+
   
   <body>
     <style>
