@@ -12,23 +12,26 @@
     min-height: 5vh;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #12520c ;
-    width: 145px; 
-    
-}
-.caixa {
-            background-color: rgba(9, 1, 1, 0.5);
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            color: #ff1100 ;
-            width: 200px;
-            font-size: 30px;
-           
-           
-        }
+    width: 145px;
   
+      
+}
+
+.caixa {
+        
+        background-color: rgba(9, 1, 1, 0.5); 
+        padding: 10px;
+        border-radius: 10px;
+        min-height: 5vh;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: #12520c ;
+        width: 145px;
+        display: flex;
+            justify-content: center;
+
+          
+    }
+
   
   </style>
   </body>
@@ -39,10 +42,11 @@
   
   <nav class="navbar navbar-expand-sm bg-body-tertiary">
     <div class="container-fluid">
+      <div class="caixa">
         <a class="navbar-brand" href="/#">
             <img src="/medo.jpg" class="rounded-2" alt="5"  />
            
-          </a>
+          </a></div>
       
          
       
@@ -53,24 +57,24 @@
   
           <div class="faca">
             <a class="nav-link" href="/ORDEM/01"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" />
-                <button class="btn btn-outline-primary" 
+                <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 1</button></a><br>
+                onfocus={entrando}     onblur={saindo}>Pagina 1</button></a>
 
             <a class="nav-link" href="/ORDEM/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" />
-                <button class="btn btn-outline-primary" 
+                <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 2</button></a><br>
+                onfocus={entrando}     onblur={saindo}>Pagina 2</button></a>
 
             <a class="nav-link" href="/ORDEM/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" />
-                <button class="btn btn-outline-primary" 
+                <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 3</button></a><br>
+                onfocus={entrando}     onblur={saindo}>Pagina 3</button></a>
 
             <a class="nav-link" href="/ORDEM/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" />
-                <button class="btn btn-outline-primary" 
+                <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 4</button></a><br>
+                onfocus={entrando}     onblur={saindo}>Pagina 4</button></a>
         </div>
         
     </left>
@@ -96,11 +100,11 @@ function saindo() {
 function clicando() {
   clicado = true;
 
-  // Gera o confete com canvas-confetti
+  
   confetti({
-      particleCount: 1000, // Quantidade de partículas
-      spread: 500, // Abertura do confete
-      origin: { y: 0.6 } // Origem do confete (altura relativa)
+      particleCount: 750, 
+      spread: 500, 
+      origin: { y: 0.6 } 
   });
 }
 </script >
@@ -108,7 +112,6 @@ function clicando() {
 <svelte:head>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </svelte:head>
-
 
 <style>
 button { transition: transform 0.3s ease; }
