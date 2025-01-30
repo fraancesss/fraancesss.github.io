@@ -27,9 +27,7 @@
   }
 </script>
 
-<div class="row align-items-center mb-3">
-  <div class="col-md-4"><input class="form-control" placeholder="Filtrar..." /></div>
-  
+
   {#each gêneros as gênero}
   <div class="genero">
       <div class="col">
@@ -40,7 +38,7 @@
         </div>
       </div>
   {/each}
-</div>
+
 <div class="row g-4">
   {#each filtrados as filme}
       <div class="col-md-6 col-xl-3">
