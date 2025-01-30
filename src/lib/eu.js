@@ -2,6 +2,7 @@ export const gêneros = ['REALIDADE NORMAL','ORDEM PARANORMAL' ];
  
 export const filmes = [
     { filme: "Guilherme", 
+        nome: "Guilherme",
         ano: "17 Anos", 
         gêneros: ["REALIDADE NORMAL"],
         sinopse: "Ola Sou estudante : ).", 
@@ -9,7 +10,8 @@ export const filmes = [
         refe: "https://www.instagram.com/francesss.__/",  
         referência: "https://github.com/fraancesss" },
 
-        { filme: "Francesss", 
+        { filme: "Francesss",
+            nome: "Francesss",
         ano: "19 Anos", 
         gêneros: ["ORDEM PARANORMAL"],
         sinopse: "Ola Sou Um Agente da Ordem 👽.", 

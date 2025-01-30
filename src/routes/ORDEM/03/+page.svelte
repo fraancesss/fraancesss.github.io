@@ -62,6 +62,7 @@
                         <div class="card-body">
                             <h1 class="card-title">{filme.título}</h1>
                             <h3 class="card-subtitle mb-2 text-body-secondary">{filme.gênero}</h3>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">{filme.nome}</h3>
                             <h3 class="card-subtitle mb-2 text-body-secondary">{filme.ano}</h3>
                             <p class="card-text">{filme.sinopse}</p>
                             <p class="card-text">
@@ -71,9 +72,9 @@
                                 {/each}
                                 
                                 <p>Links de Contato:
-                                <a href="{filme.referência}"><button class="btn btn-warning mt-1">Github</button></a>
+                                <a href="{filme.referência}"><button class="btn btn-success mt-1">Github</button></a>
                                 
-                                <a href="{filme.refe}"><button class="btn btn-warning mt-1">Instagram</button></a>
+                                <a href="{filme.refe}"><button class="btn btn-success mt-1">Instagram</button></a>
   
                                 
                             </p>
@@ -103,7 +104,7 @@
           background-color: rgba(32, 16, 16, 0.5);
       padding: 5px;
       border-radius: 30px;
-      color: #ffffff;
+      color: #fac800;
       text-align: center;
       display: flex;
       flex-wrap: wrap;
@@ -123,12 +124,13 @@
         padding: 20px;
         border-radius: 50px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        color: #fac800;
+        color: #26ff00;
         max-width: 800px;
         margin: 20px auto;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         text-align: center;
+        
   
     }
         

@@ -12,7 +12,7 @@
     min-height: 5vh;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #12520c ;
-    width: 145px;
+    width: 180px;
   
       
 }
@@ -27,10 +27,14 @@
         color: #12520c ;
         width: 145px;
         display: flex;
-            justify-content: center;
-
-          
+            justify-content: center;          
     }
+    .letra1 {
+            color:#ff00ea;
+            font-size:22px;
+            font-weight: bold;
+        
+          }
 
   
   </style>
@@ -56,25 +60,28 @@
             <left>
   
           <div class="faca">
+            <div class="letra1">
+            <p>Elementos</p>
+          </div>
             <a class="nav-link" href="/ORDEM/01"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" />
-                <button class="btn btn-outline-primary" onclick={clicando}
+                <button type="button" class="btn btn-warning" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 1</button></a>
+                onfocus={entrando}     onblur={saindo}>Conhecimento</button></a>
 
             <a class="nav-link" href="/ORDEM/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 2</button></a>
+                onfocus={entrando}     onblur={saindo}>Medo</button></a>
 
             <a class="nav-link" href="/ORDEM/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 3</button></a>
+                onfocus={entrando}     onblur={saindo}>Sangue</button></a>
 
             <a class="nav-link" href="/ORDEM/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Pagina 4</button></a>
+                onfocus={entrando}     onblur={saindo}>Energia</button></a>
         </div>
         
     </left>
