@@ -1,38 +1,4 @@
-# sv
+Meu site a diversos simbolos e conteudo sobre algo que eu gosto muito que e um universo de desenhos(Adventure time e The owl house) e de um  rpg chamado Ordem Paranormal  onde a 5 simbolos que eu tornei como link de pagina  para o usuario ir para cada pagina que ele queira , os conteudos da pagina do Conhecimento e sobre seres de outro mundo  e nessa pagina voce pode usar 4 caixa de seleção que sao os elementos desses seres na pagina onde voce tambem pode acessar o site da wikipedia onde tem mas informações sobre eles e seu universo.
+E  na pagina de sangue a dois perfil fazendo uma separaçao de universos onde a eu na versao do nosso mundo sem atividades paranormais e a outra  versao e a do mundo onde a atividades paranormais "onde a membrana esta cada vez mais fraca"referencia* , e tambem a 2 botoes onde o usuario pode clicar para contato como o github e o instrgram.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+ Por enquanto e so , Obrigado por acessar.

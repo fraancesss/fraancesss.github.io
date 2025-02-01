@@ -105,7 +105,7 @@
       .caixa1 {
        background-color: rgba(9, 1, 1, 0.5);
       display: flex;
-      flex-wrap: wrap; /* Permite quebra de linha se necessário */
+      flex-wrap: wrap; 
       justify-content: center;
       align-items: center;
       padding: 20px;
