@@ -64,20 +64,14 @@
             <div class="letra1">
             <p>Elementos</p>
           </div>
-            <a class="nav-link" href="/ORDEM/01"> <img src="/conhecimento.jpg" alt="Logo" width="70" height="70" />
-                <button type="button" class="btn btn-warning" onclick={clicando}
-                onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Conhecimento</button></a>
+            
 
             <a class="nav-link" href="/ORDEM/02"> <img src="/morte.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" onclick={clicando}
                 onmouseover={entrando} onmouseout={saindo}
                 onfocus={entrando}     onblur={saindo}>Medo</button></a>
 
-            <a class="nav-link" href="/ORDEM/03"> <img src="/sangue.jpg" alt="Logo" width="70" height="70" />
-                <button class="btn btn-outline-primary" onclick={clicando}
-                onmouseover={entrando} onmouseout={saindo}
-                onfocus={entrando}     onblur={saindo}>Sangue</button></a>
+            
 
             <a class="nav-link" href="/ORDEM/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" />
                 <button class="btn btn-outline-primary" onclick={clicando}
