@@ -71,6 +71,8 @@
                 onmouseover={entrando} onmouseout={saindo}
                 onfocus={entrando}     onblur={saindo}>Medo</button></a>
 
+               
+
             
 
             <a class="nav-link" href="/ORDEM/04"> <img src="/energia.jpg" alt="Logo" width="70" height="70" />
