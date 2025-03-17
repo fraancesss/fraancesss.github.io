@@ -46,10 +46,10 @@
     let valor2 = $state(0);
     let moedaPadrao = $state({ rates: {} });
 
-    function getBandeira(codigo) {
-        return moedas.find(m => m.código === codigo)?.bandeira || '';
-    }
-
+    function Bandeira(codigo) {//↓verifca m.codigo e = ao codigo fornecido de função
+        return moedas.find(m => m.código === codigo)?.bandeira || '';   
+    }                               /*?=evita erro. ↑ se moeda encontrada retorna sua bandeira           
+                                                 senao retorna umastring vazia("") para evitar erro*/
     async function mudarMoeda() {
         try {
             const resposta = await fetch(`https://open.er-api.com/v6/latest/${código1}`);
@@ -86,8 +86,8 @@
 <div class="caixa1">
     <h1 class="text-center">Cotação de moedas</h1>
     <div class="input-group">
-        <div class="CS">
-            <img class="bandeira" src={getBandeira(código1)} alt="Bandeira" />
+        <div class="CS">           <!-- ↓ chama a funçao q volta a link da bandeira da moeda slecionada -->  
+            <img class="bandeira" src={Bandeira(código1)} alt="Bandeira" />
             <select class="form-select" bind:value={código1} onchange={mudarMoeda}>
                 {#each moedas as moeda}
                     <option value={moeda.código} title={moeda.nome}>{moeda.código}</option>
@@ -99,8 +99,8 @@
         <button class="btn btn-outline-secondary" type="button" onclick={inverterMoedas}>⇄</button>
         <br>
         <input placeholder="0,00" type="number" class="form-control w-25" oninput={converterPara} bind:value={valor2} />
-        <div class="CS2">
-            <img class="bandeira" src={getBandeira(código2)} alt="Bandeira" />
+        <div class="CS2">           <!-- ↓ chama a funçao q volta a link da bandeira da moeda slecionada -->  
+            <img class="bandeira" src={Bandeira(código2)} alt="Bandeira" />
             <select class="form-select" bind:value={código2} onchange={converterPara}>
                 {#each moedas as moeda}
                     <option value={moeda.código} title={moeda.nome}>{moeda.código}</option>
