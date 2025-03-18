@@ -31,6 +31,10 @@
 </body>
 
 <script>
+
+
+
+
     let moedas = [
         { nome: 'Dólar americano', código: 'USD', bandeira: 'https://flagcdn.com/w40/us.png' },
         { nome: 'Real brasileiro', código: 'BRL', bandeira: 'https://flagcdn.com/w40/br.png' },
@@ -80,6 +84,13 @@
     }
 
     mudarMoeda();
+
+let data = new Date();
+    function formatarData(data){
+        let newDate = new Date(data)
+        return `${newDate.getDate()}/${newDate.getMonth()+1}/${newDate.getFullYear()}`;
+    }
+
 </script>
 
 <center>
@@ -110,7 +121,10 @@
     </div>
     
     <div class="text-center mt-3">
+        
         <p>Taxa de câmbio: 1 {código1} = {moedaPadrao.rates[código2] || 'N/A'} {código2}</p>
+        <p>Data cotação utilizada: {formatarData(data)}</p>
+
     </div>
 
     <div class="position-fixed bottom-0 end-0 m-3">
