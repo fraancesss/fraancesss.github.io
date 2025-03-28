@@ -32,9 +32,38 @@
 </body>
 
   
-<center>
-    <div class="caixa1">
-     
-    <h1>エネルギー</h1>
-  </div>
-  </center>
+<script>
+    let idPostagem = $state();
+    let postagem = $state(null);
+    let comentarios = $state([]);
+
+    async function buscarPostagem() {
+        try {
+            let resposta = await fetch(`https://jsonplaceholder.typicode.com/posts/${idPostagem}`);
+            postagem = await resposta.json();
+
+            let resposta2 = await fetch(`https://jsonplaceholder.typicode.com/posts/${idPostagem}/comments`);
+            comentarios = await resposta2.json();
+        } catch (error) {
+            console.error("Erro ao buscar os dados:", error);
+        }
+    }
+</script>
+
+<input placeholder="ID da postagem" type="number" bind:value={idPostagem} />
+<button onclick={buscarPostagem}>Buscar postagem</button>
+
+{#if postagem}
+    <h1>{postagem.title}</h1>
+    <p>{postagem.body}</p>
+{/if}
+
+<h2>Comentários</h2>
+<ul>
+    {#each comentarios as comentario}
+        <li><strong>{comentario.name}</strong>: {comentario.body}</li>
+    {/each}
+</ul>
+
+
+
